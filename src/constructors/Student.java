@@ -15,6 +15,15 @@ public class Student {
 
     Student(){}
 
+    Student(Student other){
+        name = other.name;
+        address = other.address;
+        email = other.email;
+        batch = other.batch;
+        psp = other.psp;
+        state = other.state;
+    }
+
     void changeBatch(String newBatch){
         this.batch = newBatch;
     }
