@@ -13,7 +13,11 @@ public class Main {
         System.out.println("State of: "+dhayal.name + ", is: "+ dhayal.state);
 
         Student s1 = new Student("Ram", null);
+
+        System.out.println("Empty parameter constructor called");
         Student s2 = new Student();
+
+        System.out.println("Copy constructor called");
         Student s3 = new Student(s2);
     }
 }
